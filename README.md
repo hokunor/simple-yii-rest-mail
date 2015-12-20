@@ -1,0 +1,1 @@
+# simple-yii-rest-mail
