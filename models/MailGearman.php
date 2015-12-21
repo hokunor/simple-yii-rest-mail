@@ -56,18 +56,4 @@ class MailGearman extends ActiveRecord  implements Linkable
             ]), $this->priority
             );
     }
-    /**
-     * Sends an email to the specified email address using the information collected by this model.
-     * @param  string  $email the target email address
-     * @return boolean whether the model passes validation
-     */
-    /*public function add($email)
-    {
-        Yii::$app->gearman->getDispatcher()->background('mailJob', new JobWorkload([
-        'params' => [
-            'data' => 'value'
-        ]
-    ])); // run in background
-        yii::$app->gearman->getDispatcher()->execute('mailJob', ['data' => 'value']); // run synchronize
-    }*/
 }

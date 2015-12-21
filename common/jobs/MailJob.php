@@ -16,7 +16,7 @@ class MailJob extends JobBase
 
         Yii::$app->mailer->compose()
             ->setTo($mail->to)
-            ->setFrom([$mail->from => $mail->from])
+            ->setFrom($mail->from)
             ->setSubject($mail->subject)
             ->setTextBody($mail->message)
             ->send();
