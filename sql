@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS `mail_gearman` (
   `to` varchar(255) NOT NULL,
   `from` varchar(255) NOT NULL,
   `attachment` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
   `message` TEXT,
   `priority` tinyint(1) NOT NULL,
   `created` datetime NOT NULL,
